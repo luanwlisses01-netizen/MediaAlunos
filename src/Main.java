@@ -8,24 +8,26 @@ public  class Main {
         System.out.println("SISTEMA DE MÉDIA");
         System.out.println();
 
-        System.out.print("Digite a Primeira Nota: ");
-        double nota1 = scanner.nextDouble();
+        for (int aluno = 1; aluno <= 5; aluno++) {
 
-        System.out.print("Digite a Segunda Nota: ");
-        double nota2 = scanner.nextDouble();
+            System.out.print("Digite a Primeira Nota: ");
+            double nota1 = scanner.nextDouble();
 
-        double media = (nota1 + nota2) / 2;
+            System.out.print("Digite a Segunda Nota: ");
+            double nota2 = scanner.nextDouble();
 
-        System.out.println("Média: " + media);
+            double media = (nota1 + nota2) / 2;
 
-        if (media >= 7){
-            System.out.println("Resultado: APROVADO");
-        } else if (media >= 5) {
-            System.out.println("Resultado: RECUPERAÇÃO");
-        } else {
-            System.out.println("Resultado: REPROVADO");
+            System.out.println("Média: " + media);
+
+            if (media >= 7) {
+                System.out.println("Resultado: APROVADO");
+            } else if (media >= 5) {
+                System.out.println("Resultado: RECUPERAÇÃO");
+            } else {
+                System.out.println("Resultado: REPROVADO");
+            }
         }
-
         scanner.close();
     }
 }
