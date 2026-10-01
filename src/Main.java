@@ -18,6 +18,14 @@ public  class Main {
 
         System.out.println("Média: " + media);
 
+        if (media >= 7){
+            System.out.println("Resultado: APROVADO");
+        } else if (media >= 5) {
+            System.out.println("Resultado: RECUPERAÇÃO");
+        } else {
+            System.out.println("Resultado: REPROVADO");
+        }
+
         scanner.close();
     }
 }
