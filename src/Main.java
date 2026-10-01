@@ -7,10 +7,16 @@ public  class Main {
 
         System.out.println("SISTEMA DE MÉDIA");
         System.out.println();
-        System.out.print("Digite uma Nota: ");
-        double nota = scanner.nextDouble();
 
-        System.out.println("Nota informada: " + nota);
+        System.out.print("Digite a Primeira Nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a Segunda Nota: ");
+        double nota2 = scanner.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        System.out.println("Média: " + media);
 
         scanner.close();
     }
